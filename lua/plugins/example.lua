@@ -31,6 +31,8 @@ return {
     },
   },
 
+  { "tpope/vim-fugitive" },
+
   -- change trouble config
   {
     "folke/trouble.nvim",
@@ -255,6 +257,14 @@ return {
     "lewis6991/gitsigns.nvim",
     config = function()
       require("gitsigns").setup()
+    end,
+  },
+  -- Add Gitsigns
+  {
+    "lewis6991/gitsigns.nvim",
+    config = function()
+      require("gitsigns").setup()
+      vim.keymap.set("n", "<leader>gp", ":Gitsigns preview_hunk<CR>", {})
     end,
   },
 }
