@@ -17,6 +17,13 @@ return {
   -- add transparent tokyonight
   {
     "folke/tokyonight.nvim",
+    opts = {
+    transparent = true,
+    styles = {
+      sidebars = "transparent",
+      floats = "transparent",
+    },
+  },
   },
   -- Configure LazyVim to load tokyonight
   {
@@ -143,6 +150,7 @@ return {
         "vim",
         "yaml",
         "cpp",
+        "java",
       },
     },
   },
@@ -203,6 +211,8 @@ return {
         "clangd",
         "clang-format",
         "codelldb",
+        "java-test",
+        "java-debug-adapter",
       },
     },
   },
